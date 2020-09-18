@@ -1,0 +1,386 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main(){
+	int formula = 2;
+	float width, length;
+	int shapeNum = 10;
+	char shape[10];
+	float perimeter;
+	char math[10];
+	int Ap = 10;
+	char shapeArea[10];
+	int sqre = 20;
+	float areaSquareWidth;
+	float areaSquare;
+	float areaRectWidth;
+	float areaRectLength;
+	float areaRect;
+	float areaTria;
+	float areaTriaHeight;
+	float areaTriaBase;
+	float radius;
+	float pi = 3.1415926535;
+	float areaCircle;
+	int areaVall = 10;
+	int wrong = 5;
+	int meter = 13;
+	int unitNum = 13;
+	int km = 13;
+	int cm = 13;
+	int mm = 13;
+	char unit[20];
+	
+	printf("Do you want area or perimeter?   Answer: ");
+	scanf("%s",math);
+	
+	if(strcmp(math, "Area") == 0)
+	{
+		Ap = 1;
+	}
+	else if(strcmp(math, "Perimeter") == 0)
+	{
+		Ap = 2;
+	}
+	else if(strcmp(math, "area") == 0)
+	{
+		Ap = 1;
+	}
+	else if(strcmp(math, "perimeter") == 0)
+	{
+		Ap = 2;
+	}
+	else if(strcmp(math, "AREA") == 0)
+	{
+		Ap = 1;
+	}
+	else if(strcmp(math, "PERIMETER") == 0)
+	{
+		Ap = 2;
+	}
+	else
+	{
+    	Ap = 0;
+    	wrong = 0;
+    }
+	if(Ap == 2)
+	{
+		printf("Square or Rectangle?   Answer : ");
+	    scanf("%s",shape);
+	    
+	    if(strcmp(shape, "Square") == 0)
+	    {
+	    	shapeNum = 1;
+	    }
+	    else if(strcmp(shape, "Rectangle") == 0)
+	    {
+	        shapeNum = 2;
+	    }
+	    
+	    else if(strcmp(shape, "square") == 0)
+	    {
+	    	shapeNum = 1;
+	    }
+	   else if(strcmp(shape, "rectangle") == 0)
+	    {
+	        shapeNum = 2;
+	    }
+	    
+	    else if(strcmp(shape, "SQUARE") == 0)
+	    {
+	    	shapeNum = 1;
+	    }
+	    else if(strcmp(shape, "RECTANGLE") == 0)
+	    {
+	        shapeNum = 2;
+	    }
+	    
+	    else if(strcmp(shape, "sQUARE") == 0)
+	    {
+	    	shapeNum = 1;
+	    }
+	    else if(strcmp(shape, "rECTANGLE") == 0)
+	    {
+	        shapeNum = 2;
+	    }
+	    else
+	    {
+	    	shapeNum = 0;
+	    }
+		
+	    if(shapeNum == 2)
+	    {   
+	    printf("\nEnter the width :  ");
+		scanf("%f",&width);
+		printf("Enter the length :  ");
+		scanf("%f",&length);
+	 /*   printf("Enter the unit : ");
+	    scanf("%s",unit);
+	    if(strcmp(unit, "meter") == 0)
+	    {
+	    	meter = 1;
+	    }
+	    else if(strcmp(unit, "Meter") == 0)
+	    {
+	    	meter = 1;
+	    }
+	    else if(strcmp(unit, "METER") == 0)
+	    {
+	    	meter = 1;
+	    }
+	    else if(strcmp(unit, "Kilometer") == 0)
+	    {
+	    	km = 1;
+	    }
+	    else if(strcmp(unit, "kilometer") == 0)
+	    {
+	    	km = 1;
+	    }
+	    else if(strcmp(unit, "KILOMETER") == 0)
+	    {
+	    	km = 1;
+	    }
+	    else if(strcmp(unit, "km") == 0)
+	    {
+	    	km = 1;
+	    }
+	    else if(strcmp(unit, "k.m") == 0)
+	    {
+	    	km = 1;
+	    }
+	    else if(strcmp(unit, "centimeter") == 0)
+	    {
+	    	cm = 1;
+	    }
+	    else if(strcmp(unit, "Centimeter") == 0)
+	    {
+	    	cm = 1;
+	    }
+	    else if(strcmp(unit, "CENTIMETER") == 0)
+	    {
+	    	cm = 1;
+	    }
+	    else if(strcmp(unit, "cm") == 0)
+	    {
+	    	cm = 1;
+	    }
+	    else if(strcmp(unit, "c.m") == 0)
+	    {
+	    	cm= 1;
+	    }
+	    else if(strcmp(unit, "milimeter") == 0)
+	    {
+	    	mm = 1;
+	    }
+	    else if(strcmp(unit, "Milimeter") == 0)
+	    {
+	    	mm = 1;
+	    }
+	    else if(strcmp(unit, "MILIMETER") == 0)
+	    {
+	    	mm = 1;
+	    }
+	    else if(strcmp(unit, "mm") == 0)
+	    {
+	    	mm = 1;
+	    }
+	    else if(strcmp(unit, "m.m") == 0)
+	    {
+	    	mm = 1;
+	    }
+	    else if(strcmp(unit, "Millemeter") == 0)
+	    {
+	    	mm = 1;
+	    }
+	    else
+	    {
+	    	meter, km, mm, cm = 0;
+	    }
+	  
+	    
+	    
+	    
+	    if(meter=1)
+	    {
+	    	unitNum = 1;
+	    }
+	    else if(km = 1)
+	    {
+	    	unitNum = 2;
+	    }
+	    else if(cm = 1)
+	    {
+	    	unitNum = 3;
+	    }
+	    else if(mm = 1)
+	    {
+	    	unitNum = 4;
+	    }
+	    else
+	    {
+	    	unitNum = 0;
+	    }
+	    */
+	    
+		perimeter = formula*(width+length);
+		printf("\n\n\nThe perimeter of the rectangle is %f",perimeter);
+		
+	  /*  if(unitNum == 1)
+	    {
+	    	printf(" meter");
+	    }
+	    else if(unitNum == 2)
+	    {
+	    	printf(" kilometer");
+	    }
+	    else if(unitNum == 3)
+	    {
+	    	printf(" centimeter");
+	    }
+	    else if(unitNum == 4)
+	    {
+	    	printf(" milimeter");
+	    }*/
+	    printf("\n\n\n\n\n\n\n\n\n\n\n\n");
+		}
+		
+		if(shapeNum == 1)
+		{
+			printf("\nEnter the width :  ");
+			scanf("%f",&width);
+			perimeter=formula*(width*formula);
+			printf("\n\n\nThe perimeter of the square is %f",perimeter);
+			printf("\n\n\n\n\n\n\n\n\n\n\n\n");
+		}
+	}
+		
+		if(Ap == 1){
+			printf("Square, Rectangle, Circle or Triangle?   Answer : ");	
+			scanf("%s", shapeArea);
+		
+		    if(strcmp(shapeArea, "Square") == 0)
+		    {
+		    	sqre = 1;
+		    }
+		    else if(strcmp(shapeArea, "Rectangle") == 0)
+		    {
+		        sqre = 2;
+		    }
+		    else if(strcmp(shapeArea, "Triangle") == 0)
+		    {
+		    	sqre = 3;
+		    }
+		    
+		    else if(strcmp(shapeArea, "square") == 0)
+		    {
+		    	sqre = 1;
+		    }
+		    else if(strcmp(shapeArea, "rectangle") == 0)
+		    {
+		    	sqre = 2;
+		    }
+		    else if(strcmp(shapeArea, "triangle") == 0)
+		    {
+		    	sqre = 3;
+		    }	
+		    
+		    
+		    else if(strcmp(shapeArea, "SQUARE") == 0)
+		    {
+		    	sqre = 3;
+		    }
+		    else if(strcmp(shapeArea, "RECTANGLE") == 0)
+		    {
+		    	sqre = 2;
+		    }
+		    else if(strcmp(shapeArea, "TRIANGLE") == 0)
+		    {
+		    	sqre = 3;
+		    }
+		    
+		    else
+	        {
+	    	    sqre = 0;
+	        }
+		    
+	        if(strcmp(shapeArea, "CIRCLE") == 0)
+		    {
+		    	areaVall = 4;
+		    }
+		    else if(strcmp(shapeArea, "circle") == 0)
+		    {
+		    	areaVall = 4;
+		    }
+		    else if(strcmp(shapeArea, "Circle") == 0)
+		    {
+		    	areaVall = 4;
+		    }
+		    else
+		    {
+		    	areaVall = 1;
+		    }
+		    
+		    if(sqre == 1)
+		    {
+		    	printf("Enter the width : ");
+		    	scanf("%f",&areaSquareWidth);
+		    	areaSquare = areaSquareWidth * areaSquareWidth;
+		    	printf("\nThe area of the Square is %f", areaSquare);
+		        printf("\n\n\n\n\n\n\n\n");
+		     }
+		     
+		     if(sqre == 2)
+		     {
+		     	printf("Enter the width : ");
+		     	scanf("%f",&areaRectWidth);
+		     	printf("Enter the length : ");
+		     	scanf("%f",&areaRectLength);
+		     	areaRect = areaRectWidth*areaRectLength;
+		     	printf("\nThe area of the rectangle is %f ", areaRect);
+		     	printf("\n\n\n\n\n\n\n\n");
+		     }
+		     if(sqre == 3)
+		     {
+		     	printf("Enter the base : ");
+		     	scanf("%f",&areaTriaBase);
+		     	printf("Enter the height : ");
+		     	scanf("%f",&areaTriaHeight);
+		     	areaTria = 0.5*(areaTriaBase*areaTriaHeight);
+		     	printf("\nThe area of the triangle is %f", areaTria);
+		     	printf("\n\n\n\n\n\n\n");
+		     }
+		     if(areaVall == 4)
+		     {
+		     	printf("Enter the radius : ");
+		     	scanf("%f",&radius);
+		     	areaCircle = pi*(radius*radius);
+		     	printf("\nThe area of the circle is %f", areaCircle);
+		     	printf("\n\n\n\n\n\n\n\n");
+		     }
+		}
+		if(Ap == 0)
+		{
+			printf("\nPlease enter a valid value or check your spelling....");
+			printf("\n\n\n\n\n\n\n\n");
+		}
+		if(shapeNum == 0)
+		{
+			printf("\nPlease enter a valid value or check your spelling....");
+			printf("\n\n\n\n\n\n\n\n");
+		}
+		if(sqre == 0)
+		{
+			printf("\nPlease enter a valid value or check your spelling....");
+			printf("\n\n\n\n\n\n\n\n");
+		}
+		if(wrong == 0)
+		{
+			printf("\nPlease enter a valid value or check your spelling....");
+			printf("\n\n\n\n\n\n\n\n");
+		}
+		if(areaVall == 0)
+		{
+			printf("\nPlease enter a valid value or check your spelling....");
+			printf("\n\n\n\n\n\n\n\n");
+		}
+	}
